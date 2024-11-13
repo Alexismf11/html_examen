@@ -1,0 +1,160 @@
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*-*ESTILOS GENERALES*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*/
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    margin: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*-*-*-*HEADER*-*-*-*-*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*/
+header{
+    background: linear-gradient(70deg, rgba(10, 0, 0, 0.751)15%, black);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin:10px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+h1{
+    margin: 25px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*-*-HEADER: Navigation Bar*-*-*-*-*
+*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*--*-*-*/
+.navigationBarList{
+    list-style-type: none;
+    align-self: flex-end;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap:20px;
+    margin-right: 25px; 
+}
+
+.buscar{
+    display: flex;
+    justify-content: right;
+    margin:15px;
+}
+
+.enlace{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.enlace:hover{
+    color:green;
+}
+
+.active{
+    color:yellow
+    
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*-*ESTILOS DE GRID*-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*/
+main{
+    width: 800px;
+    margin:auto;
+    padding: 30px;
+    display: grid;
+    /*Para colocar columnas y filas con medidas*/
+    grid-template-columns: 200px 200px 200px 200px;
+    /*1fr para indicar que ocupe el espacio
+    restante de la columna*/
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem; /*espacio entre columnas*/
+    align-content: center;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+*-*-*-*-*-*-*-*-*-*-FOOTER*-*-*-*-**-*-*-*-*-*-*-
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-*-*/
+.footer{
+    position: relative;
+    margin-top: 20px;
+    width:100%;
+    background: lightgray;
+}
+
+.siguenos{
+    padding-top:10px;
+    text-align: center;
+}
+
+.footer-links{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.social-icon{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color:black;
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.derechos{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+

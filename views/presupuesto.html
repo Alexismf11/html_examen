@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Presupuesto</title>
+        <!--FAVICON-->
+        <link rel="icon" type="image/x-icon" href="../assets/images/logo_samsung.jpg?v=2">
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/estilos_presupuesto.css">
+    </head>
+    <body>
+        <header>
+        <img class="logo" src="../assets/images/logo_samsung.jpg" alt="logo">
+            <h1>PRESUPUESTO</h1>
+            <nav class="navigationBar">
+                <ul class="navigationBarList">
+                    <li>
+                        <a class="enlace" href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="../views/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="enlace active" href="#">Presupuesto</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="../views/productos.html">Productos</a>
+                    </li>
+                </ul>   
+                <form class="buscar">
+                    <input type="search" placeholder="Buscar">
+                    <input type="submit" value="¿Buscar!">
+                </form>         
+            </nav>
+        </header>
+        <!-- MAIN en lugar de usar Header usamos div class porque la podemos modificar más facil-->
+        <div class="container">
+            <form id="myForm" name="myForm" action="#" method="get" target="_self"><!--Form para crear formulario-->
+                <ul class="flex-outer"><!--LISTA PRINCIPAL-->
+                    <li>
+                        <label for="first-name">Nombre</label><!--Label sirve para colocar el identificador del input, lo que debe escribir el usuario-->
+                        <input type="text" id="first-name" name="first-name"
+                            placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
+                            title="Escriba sólo letras etre 3 y 15 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="surname">Apellidos</label>
+                        <input type="text" id="surname" name="surname" 
+                            placeholder="Escriba sus apellidos" pattern="[A-Z a-z]{4,40}"
+                            title="Escriba sólo letras etre 4 y 40 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" 
+                            placeholder="Escriba su Correo Electrónico" pattern="[a-zA-Z0-9_-.]+@[a-zA-Z0-9_-.]+\.[a-z]{2,4}"
+                            title="Escriba su Correo Electrónico" required>
+                    </li>
+                    <li>
+                        <label for="telephone">Teléfono</label>
+                        <input type="tel" id="telephone" name="telephone" 
+                            placeholder="Escriba su teléfono" pattern="[0-9]{9}"
+                            title="Escriba los 9 números de su teléfono movil" required>
+                    </li>
+                    <li>
+                        <label for="message">Solicite más información</label>
+                        <textarea rows="6" id="message"
+                            placeholder="Escriba aqui su mensaje"></textarea>
+                    </li>
+                    <li>
+                    <P>Edad</P>
+                    <ul class="flex-inner"><!--LISTA SECUNDARIA-->
+
+                        <li>
+                            <!--AGE OPTION para que solo se puede elegir 1 opción-->
+                            <label for="veinte-veintinueve">18-28</label>
+                            <!--Si se coloca el input type radio antes del label el circulo del input aparecera antes del texto, es decir, a la izquierda-->
+                            <input type="radio" id="veinte-veintinueve" name="age-option" value="18-28">
+                        </li>
+
+                        <li>
+                            <label for="treinta-treintaynueve">28-38</label>
+                            <input type="radio" id="treinta-treintaynueve" name="age-option" value="28-38">                            
+                        </li>
+
+                        <li>
+                            <label for="cuarenta-cuarentaynueve">38-48</label>
+                            <input type="radio" id="cuarenta-cuarentaynueve" name="age-option" value="38-48">                                                        
+                        </li>
+
+                        <li>
+                            <label for="cincuenta-cincuentaynueve">48-58</label>
+                            <input type="radio" id="cincuenta-cincuentaynueve" name="age-option" value="48-58">                                                        
+                        </li>
+
+                        <li>
+                            <label for="otherAges">Otros</label>
+                            <input type="radio" id="otherAges" name="age-option" value="Otros">                               
+                        </li>
+                    </ul>
+                    <div class="politica">
+                        <label>Acepto la política de privacidad de la empresa</label>
+                        <input type="checkbox" class="check1" value="first_checkbox" title="Debe aceptar politica de privacidad" required>   
+                    </div>
+                    <li class="liButtons">
+                        <button type="reset">Borrar</button>
+                        <button type="submit">Enviar</button>
+                    </li>
+                    </ul>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="siguenos" >
+                <h4>Síguenos</h4>
+            </div>
+            <div class="footer-links">
+                <ul class="social-icon">
+                    <li class="icon-elem">
+                        <a href="https://www.instagram.com/samsungespana/" class="icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social-icon">
+                    <li class="icon-elem">
+                        <a href="https://www.facebook.com/SamsungEspana/" class="icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social-icon">
+                    <li class="icon-elem">
+                        <a href="https://x.com/SamsungEspana/" class="icon">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>    
+                <ul class="social-icon">
+                    <li class="icon-elem">
+                        <a href="https://www.youtube.com/user/SamsungMobileSpain" class="icon">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                </ul>    
+                <ul class="social-icon">
+                    <li class="icon-elem">
+                        <a href="https://www.linkedin.com/company/samsungespana/" class="icon">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                </ul>        
+            </div>
+            <div class="derechos">
+                <p>&copy; Todos los derechos reservados Samsung Málaga</p>
+            <!--Para colocar el simbolo de copyright &copy;-->
+            </div>
+    </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
